@@ -6,6 +6,12 @@ const createEsbuildPlugin =
   require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 
 module.exports = defineConfig({
+  env: {
+    TAGS: "not @ignore",
+    YVYTU_URL: "https://vientosdelaselva.com.ar/",
+    EDEN_URL: "https://www.edenentradas.com.ar/",
+    CLARO_URL: "https://tienda.claro.com.ar/",
+  },
   e2e: {
     specPattern: "cypress/e2e/features/**/*.feature",
     async setupNodeEvents(on, config) {
@@ -17,4 +23,12 @@ module.exports = defineConfig({
       return config;
     },
   },
+  viewportWith: 1536,
+  viewportHeight: 960,
+  video: false,
+  retries: {
+    openMode: 0,
+    runMode: 2,
+  },
+  defaultCommandTimeout: 8000,
 });

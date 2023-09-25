@@ -4,7 +4,11 @@
   "description": "Se ejecutan test con cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "cypress:run:yvytu": "npx cypress run --e2e --browser chrome -e \"tags=@yvytu and not @ignore\" -s cypress/e2e/features/Yvytu/*.feature",
+    "cypress:run:todos": "npx cypress run --e2e --browser chrome -e \"tags=not @ignore\" -s cypress/e2e/features/**/*.feature",
+    "generate:report": "node cucumber-html-report.js"
+
   },
   "repository": {
     "type": "git",
@@ -13,7 +17,8 @@
   "keywords": [
     "cypress",
     "cucumber",
-    "tests"
+    "tests",
+    "pil"
   ],
   "author": "Elian",
   "license": "ISC",
@@ -30,4 +35,22 @@
     "stepDefinitions": "cypress/e2e/step_definitions/*.js",
     "cucumberautocomplete.steps": "cypress/e2e/**.js"
   }
+},
+"cypress-cucumber-preprocessor": {
+  "stepDefinitions": "cypress/e2e/step_definitions/**.js",
+  "cucumberautocomplete.steps": "cypress/e2e/**.js",
+  "html": {
+    "enabled": true,
+    "output": "reports/cucumber-report.html"
+  },
+  "messages": {
+    "enabled": true,
+    "output": "reports/messages.ndjson"
+  },
+  "json": {
+    "enabled": true,
+    "output": "reports/log.json"
+  }
 }
+
+  
