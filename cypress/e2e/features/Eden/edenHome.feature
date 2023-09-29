@@ -17,7 +17,7 @@ Feature: Tests de la página de Eden
             | mes    | febrero           |
             | hora   | 14:00             |
 
-    Scenario: Verificar precio de 1 cuartesto
+    Scenario: Verificarr precio de 1 cuartesto
         Given que un usuario está en la página de "Eden"
         When presiona el botón del header "CUARTETOS"
         And presiona el botón Ver de "El Loco Amato"
