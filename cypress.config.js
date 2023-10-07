@@ -11,6 +11,9 @@ module.exports = defineConfig({
     YVYTU_URL: "https://vientosdelaselva.com.ar/",
     EDEN_URL: "https://www.edenentradas.com.ar/",
     CLARO_URL: "https://tienda.claro.com.ar/",
+    DEXTER_URL: "https://www.dexter.com.ar/",
+    PUMA_URL: "https://ar.puma.com/",
+    ENEBE_URL: "https://enebepadel.com/",
   },
   e2e: {
     specPattern: "cypress/e2e/features/**/*.feature",
@@ -20,7 +23,7 @@ module.exports = defineConfig({
       });
       on("file:preprocessor", bundler);
       await addCucumberPreprocessorPlugin(on, config);
-      //require("cypress-image-diff-js/dist/plugin")(on, config);
+      require("cypress-image-diff-js/dist/plugin")(on, config);
       return config;
     },
   },
@@ -31,5 +34,6 @@ module.exports = defineConfig({
     openMode: 0,
     runMode: 2,
   },
+ 
   defaultCommandTimeout: 8000,
 });
