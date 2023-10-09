@@ -13,5 +13,7 @@ Feature: Home Enebe
         When presiona en el header el boton "JUGADORES"
         Then se verifica el jugador "Javier Rico Dasi"
 
-
+    Scenario: Visual Testing con cypress-image-diff en pagina Enebe
+        Given que un usuario está en la página de "Enebe"
+        Then se compara "home-page-Enebe" con la imagen baseline
 

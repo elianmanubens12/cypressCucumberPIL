@@ -7,6 +7,11 @@ Given(`que un usuario está en la página de {string}`, (urlName) => {
 }); 
 
 Then(`se compara {string} con la imagen base`, (imageName) => {
-  //cy.compareSnapshot(imageName);
+  cy.compareSnapshot(imageName);
 });
+
+Then ('se compara {string} con la imagen baseline', (nombreImg) =>{
+    cy.compareSnapshot(nombreImg);
+  });
+
 
