@@ -3,6 +3,7 @@
 
 ## Este proyecto cuenta con archivos y carpetas creadas en clase.
 ## Los test originales que yo cree se encuentran en la carpeta de cypress/e2e/features/Enebe
+//Los test de clase puede que le falten completar o fallen algunos, yo me centre en trabajar y hacer test originales
 
 [Instalación de dependencias]()
 - "@badeball/cypress-cucumber-preprocessor":  npm install @badeball/cypress-cucumber-preprocessor
