@@ -17,3 +17,9 @@ Feature: Home Enebe
         Given que un usuario está en la página de "Enebe"
         Then se compara "home-page-Enebe" con la imagen baseline
 
+
+    Scenario: Scroll hasta boton LEER MÁS
+        Given que un usuario está en la página de "Enebe"
+        When el usuario hace scroll hasta el botón "LEER MÁS"
+        And el usuario presiona en la Home el botón "LEER MÁS"
+

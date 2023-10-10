@@ -19,3 +19,17 @@ Then(`se visualiza en el header los botones {string}`, (list) => {
   Then(`se verifica el jugador {string}`, () => {
     enebeHome.getCheckJugador();
   });
+
+  When('el usuario hace scroll hasta el botón {string}', (btnleer) => {
+    // Usa scrollIntoView para desplazarte al botón
+    enebeHome.getButtonLeerMás(btnleer).then($boton => {
+        $boton[0].scrollIntoView();
+      });
+});
+
+When('el usuario presiona en la Home el botón {string}', (buttonleer) => {
+    // Haz clic en el botón después de desplazarte a él
+    enebeHome.getButtonLeerMás(buttonleer).click();
+});
+  
+  
