@@ -16,7 +16,7 @@
 [Ejecucion de tests]()
 - Abrir el terminal.
 - Escribir el comando "npx cypress open"
-- Seleccionar 'E2E STARTING'
+- Seleccionar 'E2E Testing'
 - Elegir el navegador con el que queremos abrir los test.
 - Una vez que se abra el navegador con los test en "SPECS" elegimos el test que queremos correr.
 
@@ -86,5 +86,9 @@ https://www.youtube.com/@JoanMediaES
 - Git stash apply: es mostrar los archivos ignorados guardados en un tipo de memoria temporal
 - XHR -> es una API de JavaScript
 - HideXHRInCommandLog: True; -> Comando para no visualizar las llamadas del servicio.
+
+[Confuguraciones básicas]()
+Para configuraciones básicas despues de las dependencias, corroborar que este configurado el link de la pagina a testear.
+En el "env:" del archivo cypress.config.js estan configuradas los links.
 
 
