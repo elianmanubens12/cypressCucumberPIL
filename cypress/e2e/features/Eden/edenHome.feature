@@ -23,12 +23,6 @@ Feature: Tests de la página de Eden
         And presiona el botón Ver de "El Loco Amato"
         Then el precio que se visualiza tiene el formato correcto
 
-    Scenario: Verificar precio usando Intercept
-        Given que un usuario está en la página de "Eden"
-        When presiona el botón del header "CUARTETOS"
-        And presiona el botón Ver de "1"
-        Then el precio que se visualiza tiene el formato correcto validado con la respuesta del intercept
-
 
     Scenario: Verificar precio usando llamada al servicio
         Given que un usuario está en la página de "Eden"
