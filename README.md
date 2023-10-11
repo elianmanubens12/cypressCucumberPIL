@@ -91,4 +91,11 @@ https://www.youtube.com/@JoanMediaES
 Para configuraciones básicas despues de las dependencias, corroborar que este configurado el link de la pagina a testear.
 En el "env:" del archivo cypress.config.js estan configuradas los links.
 
+[Pasos para subir los archivos al repositorio]()
+- "Git status" para saber el estado de los archivos.
+- "Git add 'nombre del archivo' " para agregar los archivos que deseamos subir.
+- "Git status" para confirmar que esten en verde y listos para subir.
+- "Git commit -m 'detalle de lo que se realizo'"
+- "Git push" para dejarlo subido en el repositorio.
+
 
