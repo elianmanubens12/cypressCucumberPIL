@@ -15,3 +15,15 @@ Then ('se visualizan en el header los botones {string}', (lista) => {
     }
   });
 });
+
+When ('el usuario presiona el boton del header {string}', () => {
+  claroHome.getIngresabtn().click;
+}); 
+
+Then ('se visualizan en la pagina  {string}', () => {
+    claroHome.getSubtitle();
+});
+
+
+
+
